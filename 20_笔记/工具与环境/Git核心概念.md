@@ -39,6 +39,41 @@ git commit -m "描述做了什么"
 git push origin main
 ```
 
+## SSH 认证（更新于 2026-05-10）
+
+GitHub 支持两种认证方式：
+
+| | HTTPS | SSH |
+|------|-------|------|
+| 地址格式 | `https://github.com/user/repo.git` | `git@github.com:user/repo.git` |
+| 认证方式 | 每次输密码或 token | 密钥对自动验证 |
+| 稳定性 | WSL2 中可能间歇超时 | 更稳定 |
+
+SSH 密钥配置流程：
+1. `ssh-keygen -t ed25519 -C "邮箱"` 生成密钥对
+2. 公钥（`.pub`）添加到 GitHub Settings → SSH Keys
+3. `git remote set-url origin git@github.com:user/repo.git` 切换地址
+
+## 远程仓库（remote）管理（更新于 2026-05-10）
+
+| 命令 | 作用 |
+|------|------|
+| `git remote -v` | 查看当前关联了哪些远程仓库 |
+| `git remote add 别名 地址` | 关联一个新远程 |
+| `git remote set-url 别名 新地址` | 修改远程地址（如 HTTPS → SSH） |
+
+一个本地仓库可以关联多个远程。
+
+## 上游分支（upstream）（更新于 2026-05-10）
+
+上游分支是本地分支和远程分支的对应关系。设置后 `git push`/`git pull` 不需要每次指定远程名和分支名：
+
+```bash
+git push --set-upstream origin main   # 只需设一次
+```
+
+之后 `git push` 自动推到 origin/main，`git pull` 自动从 origin/main 拉取，`git status` 会显示本地与远程的差异。
+
 ## 关联
 
 - [[Git文件找回]]
