@@ -74,7 +74,20 @@ git push --set-upstream origin main   # 只需设一次
 
 之后 `git push` 自动推到 origin/main，`git pull` 自动从 origin/main 拉取，`git status` 会显示本地与远程的差异。
 
+## push 网络问题排查（更新于 2026-05-11）
+
+GitHub push 在 WSL2 中常见网络错误：
+
+| 错误 | 原因 | 解决 |
+|------|------|------|
+| `Error in the HTTP2 framing layer` | HTTP/2 协议兼容问题 | `git -c http.version=HTTP/1.1 push` |
+| `Connection timed out` | DNS/代理/防火墙阻断 443 | 检查 `ping github.com`、尝试 SSH 替代 HTTPS |
+| 间歇性超时 | WSL2 网络栈不稳定 | 切 SSH 认证（见 SSH 认证章节）、或重试 |
+
+优先排查顺序：ping → HTTP/1.1 → 切 SSH。
+
 ## 关联
 
 - [[Git文件找回]]
 - [[WSL2原理]]
+- [[Claude技能开发]]
