@@ -8,6 +8,7 @@ tags:
   - control-flow
 ---
 
+- [ ] 开头已确认
 # Python 循环
 
 Python 的 `for` 本质是 for-each 遍历迭代器，与 C 的 `for(;;)` 有根本差异。`while` 两者基本一致。
@@ -42,3 +43,5 @@ for row in pixels:
 
 - [[Python列表]]
 - [[Python条件判断]]
+
+- [ ] 结尾已确认

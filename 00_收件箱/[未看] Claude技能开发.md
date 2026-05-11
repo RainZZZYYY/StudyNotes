@@ -8,6 +8,7 @@ tags:
   - concept
 ---
 
+- [ ] 开头已确认
 # Claude 技能开发
 
 Claude Code 技能是放在 `~/.claude/skills/<技能名>/SKILL.md` 下的自然语言指令文件，Claude Code 启动时自动发现并注册。
@@ -63,3 +64,5 @@ description: 一句话描述功能，以及触发方式。
 - [[session技能]]
 - [[learn技能]]
 - [[push-skills技能]]
+
+- [ ] 结尾已确认

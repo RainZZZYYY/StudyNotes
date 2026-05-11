@@ -8,6 +8,7 @@ tags:
   - concept
 ---
 
+- [ ] 开头已确认
 # WSL2 原理
 
 WSL2 是 Windows 上的 Linux 子系统，让开发者在 Windows 上直接运行完整的 Linux 内核，无需双系统或传统虚拟机。
@@ -44,3 +45,5 @@ source .venv/bin/activate
 - [[虚拟环境概念]]
 - [[Python虚拟环境]]
 - [[Obsidian笔记规范]]
+
+- [ ] 结尾已确认

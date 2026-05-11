@@ -8,6 +8,7 @@ tags:
   - reference
 ---
 
+- [ ] 开头已确认
 # Claude 多模型配置
 
 Claude Code 的 `settings.json` 支持在 `env` 中为三种模型级别分别指定模型名，但共用同一个 API key 和 base URL。
@@ -53,3 +54,5 @@ Agent 使用时选模型名，代理层自动路由到对应厂商。
 
 - [[Claude技能开发]]
 - [[Claude技能清单]]
+
+- [ ] 结尾已确认

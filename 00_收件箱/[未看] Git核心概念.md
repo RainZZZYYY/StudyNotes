@@ -8,6 +8,7 @@ tags:
   - 工具与环境
 ---
 
+- [ ] 开头已确认
 # Git 核心概念
 
 Git 是本地版本控制工具，GitHub 是云端代码托管平台。可以只用 Git 不碰 GitHub，但 GitHub 必须依赖 Git。
@@ -91,3 +92,5 @@ GitHub push 在 WSL2 中常见网络错误：
 - [[Git文件找回]]
 - [[WSL2原理]]
 - [[Claude技能开发]]
+
+- [ ] 结尾已确认

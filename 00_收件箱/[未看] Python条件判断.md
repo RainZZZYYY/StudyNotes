@@ -8,6 +8,7 @@ tags:
   - control-flow
 ---
 
+- [ ] 开头已确认
 # Python 条件判断
 
 Python 条件判断语法比 C 简洁：去括号和花括号，用 `elif` 代替 `else if`，`and/or/not` 代替 `&&/||/!`。
@@ -52,3 +53,5 @@ if items:      # 代替 if len(items) > 0:
 
 - [[Python循环]]
 - [[Python变量]]
+
+- [ ] 结尾已确认

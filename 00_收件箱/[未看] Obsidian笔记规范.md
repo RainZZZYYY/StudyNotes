@@ -8,6 +8,7 @@ tags:
   - concept
 ---
 
+- [ ] 开头已确认
 # Obsidian 笔记规范
 
 基于轻量 PARA 结构的 Obsidian 笔记体系，文件夹做大类区分，细节靠 Properties 属性组织，链接串联一切。
@@ -96,3 +97,5 @@ created: YYYY-MM-DD
 - [[虚拟环境概念]]
 - [[WSL2原理]]
 - [[Claude技能清单]]
+
+- [ ] 结尾已确认
